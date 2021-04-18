@@ -51,9 +51,8 @@ const PaymentCard = ({ packageDetails }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input name="email" type="text" placeholder="email" />
       <CardElement />
-      <MDBBtn type="submit" disabled={!stripe}>
+      <MDBBtn type="submit" gradient="purple" disabled={!stripe}>
         Pay
       </MDBBtn>
     </form>
