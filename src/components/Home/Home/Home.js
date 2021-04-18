@@ -4,6 +4,8 @@ import Services from "../Services/Services";
 import Skills from "../Skills/Skills";
 import "./Home.css";
 import Packages from "../Packages/Packages";
+import Reviews from "../Reviews/Reviews";
+import Footer from "../../Shared/Footer/Footer";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <Services />
       <Skills />
       <Packages />
+      <Reviews />
+      <Footer />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import Skill from "../Skill/Skill";
 const Skills = () => {
   const [skills, setSkills] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3300/skills")
+    fetch("https://afternoon-river-20130.herokuapp.com/skills")
       .then((res) => res.json())
       .then((data) => setSkills(data));
   }, []);

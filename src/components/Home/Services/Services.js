@@ -5,7 +5,7 @@ import Service from "../Service/Service";
 const Services = () => {
   const [serviceData, setServiceData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3300/services")
+    fetch("https://afternoon-river-20130.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => {
         setServiceData(data);
@@ -24,10 +24,10 @@ const Services = () => {
         <MDBRow style={{ marginBottom: "150px" }}>
           {serviceData.map((service) => (
             <Service
-              name={service.name}
-              description={service.description}
-              price={service.price}
-              photo={service.photo}
+              name={service.serviceName}
+              description={service.serviceDescription}
+              price={service.servicePrice}
+              photo={service.servicePhoto}
             />
           ))}
         </MDBRow>

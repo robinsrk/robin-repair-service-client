@@ -1,4 +1,4 @@
-import { MDBBtn } from "mdbreact";
+import { MDBBtn, MDBLink } from "mdbreact";
 import React from "react";
 import repair from "../../../images/repair4.png";
 
@@ -19,7 +19,9 @@ const Header = () => {
           Welcome to Robin's computer repair service for all kinds of computer
           repairs and diagnostic
         </p>
-        <MDBBtn gradient="purple">Book now</MDBBtn>
+        <MDBLink to="/packages">
+          <MDBBtn gradient="purple">Book now</MDBBtn>
+        </MDBLink>
       </div>
       <img
         alt=""
